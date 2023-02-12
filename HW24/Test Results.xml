@@ -1,0 +1,16 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1676235582870,158,GET Request 200 posts,200,OK,Thread Group 1-1,text,true,,28550,137,1,1,https://jsonplaceholder.typicode.com/posts,152,0,105
+1676235583030,480,Post 201 Request posts,201,Created,Thread Group 1-1,text,true,,1138,221,1,1,https://jsonplaceholder.typicode.com/posts,480,0,0
+1676235583511,307,Put Request 200 posts/1,200,OK,Thread Group 1-1,text,true,,1017,222,1,1,https://jsonplaceholder.typicode.com/posts/1,307,0,0
+1676235583819,305,Patch 200  Request posts/1,200,OK,Thread Group 1-1,text,true,,1282,224,1,1,https://jsonplaceholder.typicode.com/posts/1,305,0,0
+1676235584125,307,Delete 200 Request posts/1,200,OK,Thread Group 1-1,text,true,,989,225,1,1,https://jsonplaceholder.typicode.com/posts/1,307,0,0
+1676235584432,31,GET Request 200 posts,200,OK,Thread Group 1-1,text,true,,28553,137,1,1,https://jsonplaceholder.typicode.com/posts,24,0,0
+1676235584463,583,Post 201 Request posts,201,Created,Thread Group 1-1,text,true,,1131,221,1,1,https://jsonplaceholder.typicode.com/posts,583,0,0
+1676235585047,614,Put Request 200 posts/1,200,OK,Thread Group 1-1,text,true,,1007,222,1,1,https://jsonplaceholder.typicode.com/posts/1,614,0,0
+1676235585662,306,Patch 200  Request posts/1,200,OK,Thread Group 1-1,text,true,,1289,224,1,1,https://jsonplaceholder.typicode.com/posts/1,306,0,0
+1676235585968,307,Delete 200 Request posts/1,200,OK,Thread Group 1-1,text,true,,990,225,1,1,https://jsonplaceholder.typicode.com/posts/1,307,0,0
+1676235586276,38,GET Request 200 posts,200,OK,Thread Group 1-1,text,true,,28550,137,1,1,https://jsonplaceholder.typicode.com/posts,31,0,0
+1676235586314,361,Post 201 Request posts,201,Created,Thread Group 1-1,text,true,,1138,221,1,1,https://jsonplaceholder.typicode.com/posts,361,0,0
+1676235586676,521,Put Request 200 posts/1,200,OK,Thread Group 1-1,text,true,,1007,222,1,1,https://jsonplaceholder.typicode.com/posts/1,521,0,0
+1676235587197,307,Patch 200  Request posts/1,200,OK,Thread Group 1-1,text,true,,1295,224,1,1,https://jsonplaceholder.typicode.com/posts/1,307,0,0
+1676235587504,307,Delete 200 Request posts/1,200,OK,Thread Group 1-1,text,true,,998,225,1,1,https://jsonplaceholder.typicode.com/posts/1,307,0,0
