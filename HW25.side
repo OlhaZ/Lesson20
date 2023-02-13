@@ -1,0 +1,324 @@
+{
+  "id": "f6c909f2-442f-4cd8-876d-b53f2235adff",
+  "version": "2.0",
+  "name": "HW25",
+  "url": "https://rozetka.com.ua/ua/",
+  "tests": [{
+    "id": "f243e404-5d11-4d58-8f5a-84bce61f3f25",
+    "name": "Test case 1_Пошук товару за назвою",
+    "commands": [{
+      "id": "35aafa3d-74e2-49d4-92e0-842b8b2edf0a",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a44ea19-727b-4c22-8797-3f267c432bf8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1333x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "86a98a2b-01ed-4e9e-927d-55c01de5425d",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "name=search",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "2f671177-a0eb-4141-b3d3-3fa2e6888422",
+      "comment": "",
+      "command": "click",
+      "target": "css=.search-form__input",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ddacc1f2-0068-431d-a6af-aaf19ef0eeed",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//input",
+      "targets": [],
+      "value": "1000"
+    }, {
+      "id": "a6e1e792-4171-4e87-b8a9-e850bc34e4de",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "мобільні телефони"
+    }, {
+      "id": "44c54bfe-65c6-42f3-bce0-8c1599c32590",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(.,'Мобільні телефони')]",
+      "targets": [
+        ["linkText=Мобільні телефони", "linkText"],
+        ["css=.search-suggest__item_state_active > .search-suggest__item-content", "css:finder"],
+        ["xpath=//a[contains(text(),'Мобільні телефони')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://rozetka.com.ua/ua/mobile-phones/c80003/')]", "xpath:href"],
+        ["xpath=//li/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Мобільні телефони')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b8460e7-57f6-447a-bbeb-1891599b43f6",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.rz-search-result-qnty",
+      "targets": [
+        ["css=.rz-search-result-qnty", "css:finder"],
+        ["xpath=//rz-search-heading/div/div", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "8dc2d3df-e308-47c0-b958-e73bfae58604",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.rz-search-result-qnty",
+      "targets": [
+        ["css=.rz-search-result-qnty", "css:finder"],
+        ["xpath=//rz-search-heading/div/div", "xpath:position"]
+      ],
+      "value": "В категорії «Мобільні телефони»"
+    }]
+  }, {
+    "id": "040ff1ed-97ee-4379-a8c5-645ecf0c195a",
+    "name": "Test case 2_Сортування товарів за ціною",
+    "commands": [{
+      "id": "a0ad1b29-74ad-4505-9920-6d11408479dc",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb5be81e-3133-46a3-8e86-e528cfcfc6e3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1333x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "84c46218-010c-4527-aba2-13ef39a0ab1f",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//button[contains(.,'Каталог')]",
+      "targets": [
+        ["id=fat-menu", "id"],
+        ["css=#fat-menu", "css:finder"],
+        ["xpath=//button[@id='fat-menu']", "xpath:attributes"],
+        ["xpath=//rz-header-fat-menu/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Каталог')]", "xpath:innerText"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "45223f63-5ae5-4dab-b825-730acf398cf8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Каталог')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20e35881-1b55-4d2d-bd02-dfda45b6a0f8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Ноутбуки та комп’ютери",
+      "targets": [
+        ["linkText=Ноутбуки та комп’ютери", "linkText"],
+        ["css=.menu-categories__link_state_hovered", "css:finder"],
+        ["xpath=//a[contains(text(),'Ноутбуки та комп’ютери')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://rozetka.com.ua/ua/computers-notebooks/c80253/')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ноутбуки та комп’ютери')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "175fc12b-d249-44a2-92d6-9b14a9270d74",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.ng-star-inserted:nth-child(3) > .portal-section .portal-grid__cell:nth-child(1) .tile-cats__picture > .ng-star-inserted",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "ab5efe65-0635-4d20-a387-84496fabc7cc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(3) > .portal-section .portal-grid__cell:nth-child(1) .tile-cats__picture > .ng-star-inserted",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(3) > .portal-section .portal-grid__cell:nth-child(1) .tile-cats__picture > .ng-star-inserted", "css:finder"],
+        ["xpath=//img[@alt='Ноутбуки']", "xpath:img"],
+        ["xpath=//rz-list-tile/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bead0c2-3fe4-4a97-9ecb-c0dcd8085484",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.select-css",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "1da600d4-5093-4704-b873-20042fa18c74",
+      "comment": "",
+      "command": "click",
+      "target": "css=.select-css",
+      "targets": [
+        ["css=.select-css", "css:finder"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45cb5c5d-2b3c-4473-8e3e-5f75e7c2f681",
+      "comment": "",
+      "command": "click",
+      "target": "css=.select-css ng-valid ng-star-inserted ng-touched ng-dirty",
+      "targets": [
+        ["css=.select-css", "css:finder"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a91589c9-83da-4114-a778-e3c90ea07a78",
+    "name": "Test case 3 Додавання товару в бажане",
+    "commands": [{
+      "id": "625583a6-16de-4b08-855f-60d2f2796022",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ac0b0bb8-5c87-45d7-8755-45c4b7f887d7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1333x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "57dfd8d4-3ae5-4ec0-a8a5-60c388f9943b",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//rz-sidebar-fat-menu/div/ul/li/a",
+      "targets": [
+        ["linkText=Ноутбуки та комп’ютери", "linkText"],
+        ["css=.menu-categories_type_main > .menu-categories__item:nth-child(1) > .menu-categories__link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Ноутбуки та комп’ютери')])[3]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/ua/computers-notebooks/c80253/')])[2]", "xpath:href"],
+        ["xpath=//rz-sidebar-fat-menu/div/ul/li/a", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "ed18eaa5-45f6-4a4a-8410-be5c2d79d22c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Ноутбуки та комп’ютери",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d6e33b04-5266-44a3-ae7d-dcdc3ad74d2a",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//a[2]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "1d7967b8-9199-424e-8e63-8c7ae8231f2a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[2]",
+      "targets": [
+        ["linkText=Ноутбуки", "linkText"],
+        ["css=.ng-star-inserted:nth-child(3) > .portal-section .portal-grid__cell:nth-child(1) .tile-cats__heading", "css:finder"],
+        ["xpath=(//a[contains(text(),'Ноутбуки')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/ua/notebooks/c80004/')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "06eaf616-6b8b-41d3-95de-8db02815f725",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.catalog-grid__cell:nth-child(1) .lazy_img_hover",
+      "targets": [],
+      "value": "100000"
+    }, {
+      "id": "29e3c79b-571a-45e9-baab-5675dcaa8700",
+      "comment": "",
+      "command": "click",
+      "target": "css=.catalog-grid__cell:nth-child(1) .lazy_img_hover",
+      "targets": [
+        ["css=.catalog-grid__cell:nth-child(1) .lazy_img_hover", "css:finder"],
+        ["xpath=(//img[@alt='Ноутбук Acer Aspire 7 A715-42G-R3EZ (NH.QBFEU.00C) Charcoal Black / AMD Ryzen 5 5500U / RAM 16 ГБ / SSD 512 ГБ / nVidia GeForce GTX 1650'])[2]", "xpath:img"],
+        ["xpath=//img[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8c6062b-088d-4b72-a704-3df494b7a3a4",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.product__favorites .wish-button > .ng-star-inserted",
+      "targets": [
+        ["css=.product__favorites .wish-button > .ng-star-inserted", "css:finder"]
+      ],
+      "value": "50000"
+    }, {
+      "id": "b9a968b7-a795-4246-8c08-3d87f4d3ba72",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product__favorites .wish-button > .ng-star-inserted",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "07b2081b-6e9e-454b-958e-e79c9cf7d699",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.header-actions__item--wishlist use",
+      "targets": [
+        ["css=.header-actions__item--wishlist use", "css:finder"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "a3a32602-bc66-4de1-953c-7bd9df3c0d23",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header-actions__item--wishlist use",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d641b8ae-9d9d-41d6-a491-c995579a354e",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "css=.ng-star-inserted:nth-child(2) > .wish-details:nth-child(1) .wish-grid__cell:nth-child(1) .goods-tile__title:nth-child(1)",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(2) > .wish-details:nth-child(1) .wish-grid__cell:nth-child(1) .goods-tile__title:nth-child(1)", "css:finder"],
+        ["xpath=//main[@id='cabinet-content']/rz-cabinet-wishlist/rz-cabinet-wishlist-details/section/ul/li/div/app-goods-tile/app-goods-tile-default/div/div[2]/a[2]/span", "xpath:idRelative"],
+        ["xpath=//a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Ноутбук Acer Aspire 7 A715-42G-R3EZ (NH.QBFEU.00C) Charcoal Black / AMD Ryzen 5 5500U / RAM 16 ГБ / SSD 512 ГБ / nVidia GeForce GTX 1650')]", "xpath:innerText"]
+      ],
+      "value": "Ноутбук Acer Aspire 7 A715-42G-R3EZ (NH.QBFEU.00C) Charcoal Black / AMD Ryzen 5 5500U / RAM 16 ГБ / SSD 512 ГБ / nVidia GeForce GTX 1650\\n38 відгуків\\n"
+    }]
+  }],
+  "suites": [{
+    "id": "09d3db9f-8c73-4302-88ec-f36cc3633b29",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f243e404-5d11-4d58-8f5a-84bce61f3f25"]
+  }],
+  "urls": ["https://rozetka.com.ua/ua/"],
+  "plugins": []
+}
